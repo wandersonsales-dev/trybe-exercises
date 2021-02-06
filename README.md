@@ -3,9 +3,9 @@
 </h1>
 
 # 📓️ Índice
-- [📓️ Índice](#️-índice)
-- [🚀️ O que é a Trybe](#️-o-que-é-a-trybe)
-- [Ferramentas utilizadas até agora](#ferramentas-utilizadas-até-agora)
+- 📓️[ Índice](#️-índice)
+- 🚀️[ O que é a Trybe](#️-o-que-é-a-trybe)
+- 💻️[ Ferramentas utilizadas até agora](#ferramentas-utilizadas-até-agora)
   - [Unix, Bash e Shell Script](#unix-bash-e-shell-script)
   - [Git e Github](#git-e-github)
 
