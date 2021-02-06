@@ -70,3 +70,10 @@ Q09.
 ```properties
 chmod 644 numeros.txt
 ```
+
+<br/>
+
+Q10.
+```properties
+mkdir ../ifprbackup && cp -r * ../ifprbackup/
+```
