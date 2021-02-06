@@ -49,9 +49,17 @@ Q06.
 ```properties
 cp *.txt ../trabalho
 ```
+
 <br/>
 
 Q07.
 ```properties
 ls -l
+``` 
+
+<br/>
+
+Q08.
+```properties
+chmod 755 numeros.txt 
 ```
