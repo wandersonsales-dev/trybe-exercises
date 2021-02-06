@@ -63,3 +63,10 @@ Q08.
 ```properties
 chmod 755 numeros.txt 
 ```
+
+<br/>
+
+Q09.
+```properties
+chmod 644 numeros.txt
+```
