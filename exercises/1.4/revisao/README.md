@@ -49,3 +49,9 @@ Q06.
 ```properties
 cp *.txt ../trabalho
 ```
+<br/>
+
+Q07.
+```properties
+ls -l
+```
