@@ -85,3 +85,10 @@ Q11.
 cd ../ifprbackup 
 rm *.txt 
 ```
+
+<br/>
+
+Q12.
+```properties
+rm -rf ../ifpr/textos
+```
