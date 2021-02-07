@@ -77,3 +77,11 @@ Q10.
 ```properties
 mkdir ../ifprbackup && cp -r * ../ifprbackup/
 ```
+
+<br/>
+
+Q11.
+```properties
+cd ../ifprbackup 
+rm *.txt 
+```
