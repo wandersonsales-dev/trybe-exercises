@@ -106,3 +106,10 @@ Q14.
 ```properties
 mv numeros.txt sequencia.txt
 ```
+
+<br/>
+
+Q15.
+```properties
+ls /bin | cat > listabin.txt
+```
