@@ -92,3 +92,10 @@ Q12.
 ```properties
 rm -rf ../ifpr/textos
 ```
+
+<br/>
+
+Q13.
+```properties
+cd ../ifpr
+```
