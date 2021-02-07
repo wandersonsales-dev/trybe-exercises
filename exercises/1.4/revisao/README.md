@@ -113,3 +113,10 @@ Q15.
 ```properties
 ls /bin | cat > listabin.txt
 ```
+
+<br/>
+
+Q16.
+```properties
+rmdir
+```
