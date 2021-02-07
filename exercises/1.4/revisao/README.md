@@ -99,3 +99,10 @@ Q13.
 ```properties
 cd ../ifpr
 ```
+
+<br/>
+
+Q14.
+```properties
+mv numeros.txt sequencia.txt
+```
