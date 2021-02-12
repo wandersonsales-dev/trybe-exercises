@@ -13,6 +13,7 @@ div:last-of-type{
 
 div:nth-last-child(4n) {
   background-color: lime;
+  height: 4em;
 }
 
 div:nth-child(4n) {
