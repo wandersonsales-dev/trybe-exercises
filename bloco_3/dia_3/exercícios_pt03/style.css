@@ -9,3 +9,7 @@ ol:hover {
 li:active {
   font-family: fantasy;
 }
+
+ol, ul {
+  list-style: none;
+}
