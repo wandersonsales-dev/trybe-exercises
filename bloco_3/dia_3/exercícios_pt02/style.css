@@ -1,0 +1,9 @@
+.super-mario {
+  position: absolute;
+}
+
+.word {
+  position: absolute;
+  margin-top: 70px;
+  left: 70px;
+}
