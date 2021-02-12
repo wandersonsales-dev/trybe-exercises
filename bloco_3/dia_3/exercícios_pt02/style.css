@@ -4,6 +4,13 @@
 
 .word {
   position: absolute;
-  margin-top: 70px;
+  margin-top: -25px;
   left: 70px;
+  z-index: 2;
+}
+
+.baloon {
+  position: absolute;
+  margin-top: -100px;
+  z-index: 1;
 }
