@@ -1,16 +1,34 @@
 .super-mario {
   position: absolute;
+  z-index:4;
+  padding: 10px;
+}
+
+.goomba {
+  position: absolute;
+  z-index: 3;
+  top: 1200px;
+  padding: 10px;
 }
 
 .word {
   position: absolute;
-  margin-top: -25px;
+  top: 2855px;
   left: 70px;
-  z-index: 2;
+  z-index: 5;
+  padding: 10px;
 }
 
 .baloon {
   position: absolute;
-  margin-top: -100px;
+  top: 2800px;
+  z-index: 2;
+  padding: 10px;
+}
+
+.bowser {
+  position: absolute;
   z-index: 1;
+  top: 2900px;
+  padding: 10px;
 }
