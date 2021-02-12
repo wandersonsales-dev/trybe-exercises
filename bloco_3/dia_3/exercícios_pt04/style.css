@@ -45,3 +45,7 @@ div:nth-child(4n) h3 {
 div:nth-of-type(4n) h3 {
   color: #000661;
 }
+
+div:nth-of-type(2n+1) h3 {
+  font-style: italic;
+}
