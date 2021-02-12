@@ -22,3 +22,25 @@ div:nth-child(4n) {
 div:nth-of-type(4n) {
   background-color: #e6ff04;
 }
+
+
+div:first-of-type h3{
+  color: #af0000;
+  
+}
+
+div:last-of-type h3{
+  color: #0034c2;
+}
+
+div:nth-last-child(4n) h3 {
+  color: #000000;
+}
+
+div:nth-child(4n) h3 {
+  color: #ffffff;
+}
+
+div:nth-of-type(4n) h3 {
+  color: #000661;
+}
