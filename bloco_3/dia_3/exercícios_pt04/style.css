@@ -1,0 +1,51 @@
+div:hover {
+  border: 1px solid black;
+}
+
+div:first-of-type{
+  background-color: #2196f3;
+  
+}
+
+div:last-of-type{
+  background-color: #f50057;
+}
+
+div:nth-last-child(4n) {
+  background-color: lime;
+  height: 4em;
+}
+
+div:nth-child(4n) {
+  background-color: #570033;
+}
+
+div:nth-of-type(4n) {
+  background-color: #e6ff04;
+}
+
+
+div:first-of-type h3{
+  color: #af0000;
+  
+}
+
+div:last-of-type h3{
+  color: #0034c2;
+}
+
+div:nth-last-child(4n) h3 {
+  color: #000000;
+}
+
+div:nth-child(4n) h3 {
+  color: #ffffff;
+}
+
+div:nth-of-type(4n) h3 {
+  color: #000661;
+}
+
+div:nth-of-type(2n+1) h3 {
+  font-style: italic;
+}
