@@ -5,3 +5,7 @@ let resultado;
 // ADIÇÃO
 let soma = a + b;
 console.log(soma);
+
+// SUBTRAÇÃO
+let sub = a - b;
+console.log(sub);
