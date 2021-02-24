@@ -13,3 +13,7 @@ console.log(sub);
 // MULTIPLICAÇÃO
 let multi = a * b;
 console.log(multi);
+
+// DIVISÃO
+let div = a / b;
+console.log(div);
