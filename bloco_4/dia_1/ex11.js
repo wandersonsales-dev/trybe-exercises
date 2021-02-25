@@ -15,7 +15,7 @@ if(salarioBruto <= 1556.94){
 salarioBase = salarioBruto - inss;
 
 if(salarioBase <=1903.98){
-  ir = salarioBase;
+  ir = 0;
 }else if(salarioBase <= 2826.65){
   ir = (salarioBase * 0.075) - 142.80;
 }else if(salarioBase <= 3751.05){
