@@ -17,3 +17,17 @@ for(let i = 0; i < numbers.length; i++){
 }
 
 console.log('A soma de todos os elementos é: ' + acumulador);
+
+// 3 -  Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
+//
+//        -> A média aritmética é o resultado da soma de todos os elementos divido pelo número total de elementos.
+
+let acumuladorQ03 = 0;
+
+for(let i = 0; i < numbers.length; i++){
+  acumuladorQ03 += numbers[i];
+}
+
+let mediaAritmetica = acumuladorQ03 / numbers.length;
+
+console.log(mediaAritmetica);
