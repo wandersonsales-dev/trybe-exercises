@@ -53,3 +53,16 @@ if(mediaAritmeticaQ04 > 20){
 } else {
   console.log('valor menor ou igual a 20')
 }
+
+// 5 -  Utilizando for , descubra qual o maior valor contido no array
+//      e imprima-o;
+
+let maior = 0;
+
+for(let i = 0; i < numbers.length; i++){
+  if(numbers[i] > maior){
+    maior = numbers[i];
+  }
+}
+
+console.log('O maior valor do array é: ' + maior);
