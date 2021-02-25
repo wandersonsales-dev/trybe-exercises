@@ -84,3 +84,20 @@ if(impares === 0){
 } else {
   console.log('Existem ' + impares + ' valores ímpares no array');
 }
+
+// 7 -  Utilizando for , descubra qual o menor valor contido no array
+//      e imprima-o;
+
+let menor;
+
+for(let i = 0; i < numbers.length; i++){
+  if(menor === undefined){
+    menor = numbers[i];
+  }
+  
+  if(numbers[i] < menor){
+    menor = numbers[i];
+  }
+}
+
+console.log('O menor valor do array é: ' + menor);
