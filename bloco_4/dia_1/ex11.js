@@ -1,5 +1,4 @@
 let salarioBruto = 3000;
-let salarioLiquido;
 let inss, ir;
 let salarioBase;
 
