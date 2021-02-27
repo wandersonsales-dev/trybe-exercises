@@ -14,6 +14,6 @@ let n = 3;
 let lineTriangle = '';
 
 for(let line = 0; line < n; line += 1){
-  lineTriangle += ' *';
+  lineTriangle += '*';
   console.log(lineTriangle);
 }
