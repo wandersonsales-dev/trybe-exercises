@@ -6,7 +6,7 @@
 - 📓️[ Índice](#️-índice)
 - 🚀️[ O que é a Trybe](#️-o-que-é-a-trybe)
 - 💻️[ Conteúdo visto até agora](#conteúdo-visto-até-agora)
-  - [Módulo 1](#mòdulo-1)
+  - [Módulo 1 - Fundamentos do Desenvolvimento Web](#mòdulo-1---fundamentos-do-desenvolvimento-web)
 
 <br />
 
@@ -21,17 +21,76 @@ O currículo da Trybe foi desenhado em parceria com as maiores empresas de tecno
 <br />
 
 ## **Conteúdo visto até agora**
-### **Mòdulo 1**
-- [x] Unix, Bash e Shell Script
-- [x] Git, GitHub e Internet
-  - [Exercícios Resolvidos](https://github.com/wandersonsales-dev/trybe-exercises/tree/master/exercises/2.1)
-- [ ] Introdução à HTML e CSS
-  - [Exercícios Resolvidos](https://github.com/wandersonsales-dev/trybe-exercises/tree/master/bloco_3)
+### **Mòdulo 1 - Fundamentos do Desenvolvimento Web**
+- [x] [BLOCO 01] Unix, Bash e Shell Script
+  - [x] Introdução - Unix e Shell
+  - [x] Unix e Bash
+- [x] [BLOCO 02] Git, GitHub e Internet
+  - [x] Git e GitHub - O que é e para que server?
+  - [x] Git e GitHub - Entendendo os comandos
+  - [x] Internet - Entendendo como ela funciona
+  - [x] [Exercícios Resolvidos](https://github.com/wandersonsales-dev/trybe-exercises/tree/master/exercises/2.1)
+- [x] [BLOCO 03] Introdução à HTML e CSS
+  - [x] Introdução - HTML e CSS
+  - [x] HTML e CSS - Estruturas de página
+  - [x] HTML e CSS - Primeiros passos em CSS
+  - [x] HTML e CSS - Seletores e Posicionamento
+  - [x] HTML Semântico
+  - [x] [Exercícios Resolvidos](https://github.com/wandersonsales-dev/trybe-exercises/tree/master/bloco_3)
+  - [x] [Projetos](https://github.com/wandersonsales-dev/wandersonsales-dev.github.io/tree/master/projects)
+    - [x] [Lessons Learned](https://github.com/wandersonsales-dev/wandersonsales-dev.github.io/tree/master/projects/lessons-learned)
+- [ ] [BLOCO 04] Introdução à JavaScript e Lógica de Programação
+  - [x] Introdução - JavaScript
+  - [x] JavaScript - Primeiros passos
+  - [x] JavaScript - Array e loop For
+  - [ ] JavaScript - Lógica de Programação e Algoritmos
+  - [ ] JavaScript - Objetos e Funções
+  - [ ] [Exercícios Resolvidos](https://github.com/wandersonsales-dev/trybe-exercises/tree/master/bloco_4)
   - [ ] Projetos
-- [ ] Introdução à JavaScript e Lógica de Programação
-- [ ] JavaScript: DOM, Eventos e Web Storage
-- [ ] HTML e CSS: Forms, Flexbox e Responsivo
-- [ ] Introdução à JavaScript ES6 e Testes Unitários
-- [ ] Higher Order Functions do JavaScript ES6
-- [ ] JavaScript Assíncrono e Promisses
-- [ ] Testes Automatizados com Jest
+    - [ ] Playground Functions
+- [ ] [BLOCO 05] JavaScript: DOM, Eventos e Web Storage
+  - [ ] JavaScript - DOM e Seletores
+  - [ ] JavaScript - Trabalhando com elementos
+  - [ ] JavaScript - Eventos
+  - [ ] JavaScript - Web Storage
+  - [ ] Fundamentos - JavaScript - Projetos
+    - [ ] Projetos
+      - [ ] Arte com Pixels
+      - [ ] Lista de Tarefas
+      - [ ] [BÔNUS] - Meme Generator
+      - [ ] [BÔNUS] - Adivinhe a cor
+      - [ ] [BÔNUS] - Carta misteriosa
+- [ ] [BLOCO 06] HTML e CSS: Forms, Flexbox e Responsivo
+  - [ ] HTML e CSS - Forms
+  - [ ] Bibliotecas JavaScript e Frameworks CSS
+  - [ ] Introdução - CSS Flexbox
+  - [ ] CSS - Flex Box (PARTE 01)
+  - [ ] CSS - Flex Box (PARTE 02)
+  - [ ] CSS Responsivo - Mobile First
+  - [ ] Projetos
+    - [ ] Página inicial do Facebook
+- [ ] [BLOCO 07] Introdução à JavaScript ES6 e Testes Unitários
+  - [ ] JavaScript ES6 - let, const, arrow functions e template literals
+  - [ ] JavaScript ES6 - Objects
+  - [ ] Testes unitários em JavaScript
+  - [ ] Projetos
+    - [ ] JavaScript Testes Unitários
+- [ ] [BLOCO 08] Higher Order Functions do JavaScript ES6
+  - [ ] JavaScript ES6 - Introdução à Higher Order Functions
+  - [ ] JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+  - [ ] JavaScript ES6 - Higher Order Functions - map e filter
+  - [ ] JavaScript ES6 - Higher Order Functions - reduce
+  - [ ] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
+  - [ ] Projetos
+    - [ ] Zoo Functions
+- [ ] [BLOCO 09] JavaScript Assíncrono e Promisses
+  - [ ] JavaScript Assíncrono e Callbacks
+  - [ ] JavaScript Promises
+  - [ ] Projetos
+    - [ ] Carrinho de compras
+- [ ] [BLOCO 10] Testes Automatizados com Jest
+  - [ ] Primeiros passos com Jest
+  - [ ] Jest - Testes Assíncronos
+  - [ ] Jest - Simulando comportamentos
+  - [ ] Projetos
+    - [ ] Jest Assíncrono e Mocking
