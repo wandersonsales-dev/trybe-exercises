@@ -26,3 +26,15 @@ console.log('Bem-vinda, ' + info.personagem);
 info["recorrente"] = 'Sim';
 
 console.log(info);
+
+// 3 -  Faça um for/in que mostre todas as chaves do objeto.
+//      Valor esperado no console:
+
+//        personagem
+//        origem
+//        nota
+//        recorrente
+
+for(let key in info){
+  console.log(key);
+}
