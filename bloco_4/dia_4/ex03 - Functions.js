@@ -3,7 +3,7 @@
 //        Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
 //        Valor esperado no retorno da função: 6 .
 
-function highestValue(arrayNumbers){
+function smallerValue(arrayNumbers){
   let smaller;
   let smallerValueIndex;
 
