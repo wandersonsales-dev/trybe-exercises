@@ -52,8 +52,12 @@
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
-      function setTagP(selector, value) {
-        document.getElementsByTagName(selector)[0].innerText = value;
+      function setTagP(value) {
+        document.getElementsByTagName('p')[0].innerText = value;
+      }
+
+      function setYellowSquare() {
+        document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109';
       }
 
     </script>
