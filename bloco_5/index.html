@@ -72,6 +72,14 @@
         document.getElementsByTagName('p')[0].style.textTransform = 'uppercase';
       }
 
+      function showContentP() {
+        let ps = document.getElementsByTagName('p');
+
+        for (let index in ps) {
+          console.log(ps[index].innerText);
+        }
+      }
+
     </script>
   </body>
 </html>
