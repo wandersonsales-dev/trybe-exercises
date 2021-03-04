@@ -141,6 +141,15 @@
         }
         newElementQ08.appendChild(newLisQ08);
       }
+
+      let selectorQ09 = document.querySelector('.main-content');
+      
+      for (let index = 0; index < 3; index += 1) {
+        let newElementQ09 = document.createElement('h3');
+        newElementQ09.innerText = 'Elemento H3 número ' + (index+1) + ' foi criado.';
+
+        selectorQ09.appendChild(newElementQ09);
+      }
     </script>
   </body>
 </html>
