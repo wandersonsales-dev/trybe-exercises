@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let = selectorQ01 = document.querySelector('body');
+      let newElementH1Q01 = document.createElement('h1');
+
+      newElementH1Q01.innerText = "Exercício 5.2 - JavaScript DOM";
+
+      selectorQ01.appendChild(newElementH1Q01);
+
+      let selectorQ02 = document.querySelector('body');
+      let newElementQ02 = document.createElement('div');
+
+      newElementQ02.setAttribute('class', 'main-content');
+
+      selectorQ02.appendChild(newElementQ02);
+
+      let selectorQ03 = document.querySelector('.main-content');
+      let newElementQ03 = document.createElement('div');
+
+      newElementQ03.setAttribute('class', 'center-content');
+
+      selectorQ03.appendChild(newElementQ03);
+
+      let selectorQ04 = document.querySelector('.center-content');
+      let newElementQ04 = document.createElement('p');
+
+      newElementQ04.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna nec nisl convallis convallis id in lectus. Aliquam vel sem justo. Etiam porta, arcu ut faucibus tincidunt, nulla eros malesuada libero, vel ultricies nunc nulla non tortor. Curabitur euismod magna dui, quis suscipit magna pellentesque at. Etiam vel justo sed nisl maximus efficitur non eget ligula. Integer pretium augue vel eleifend elementum. Nunc fermentum tincidunt nulla, sit amet eleifend dui eleifend et.";
+
+      selectorQ04.appendChild(newElementQ04);
+
+      let selectorQ05 = document.querySelector('.main-content');
+      let newElementQ05 = document.createElement('div');
+
+      newElementQ05.setAttribute('class', 'left-content');
+
+      selectorQ05.appendChild(newElementQ05);
+
+      let selectorQ06 = document.querySelector('.main-content');
+      let newElementQ06 = document.createElement('div');
+
+      newElementQ06.setAttribute('class', 'right-content');
+
+      selectorQ06.appendChild(newElementQ06);
+
+      let selectorQ07 = document.querySelector('.left-content');
+      let newElementQ07 = document.createElement('img');
+
+      newElementQ07.setAttribute('src', 'https://picsum.photos/200');
+      newElementQ07.setAttribute('class', 'small-image');
+
+      selectorQ07.appendChild(newElementQ07);
+
+      let selectorQ08 = document.querySelector('.right-content');
+      let newElementQ08 = document.createElement('ul');
+
+      selectorQ08.appendChild(newElementQ08);
+
+      let numbersInFull = {
+        1   : 'um',
+        2   : 'dois',
+        3   : 'três',
+        4   : 'quatro',
+        5   : 'cinco',
+        6   : 'seis',
+        7   : 'sete',
+        8   : 'oito',
+        9   : 'nove',
+        10  : 'dez',
+      }
+
+      for (let index = 0; index < 10; index += 1) {
+        let newLisQ08 = document.createElement('li');
+        let has = false;
+        for (let numbers in numbersInFull) {
+          if(index+1 == numbers) {
+            newLisQ08.innerText = numbersInFull[index+1];
+            has = true;
+            break;
+          }
+        }
+
+        if (!has) {
+          newLisQ08.innerText = index+1;
+        }
+        newElementQ08.appendChild(newLisQ08);
+      }
+
+      let selectorQ09 = document.querySelector('.main-content');
+      
+      for (let index = 0; index < 3; index += 1) {
+        let newElementQ09 = document.createElement('h3');
+        newElementQ09.innerText = 'Elemento H3 número ' + (index+1) + ' foi criado.';
+
+        selectorQ09.appendChild(newElementQ09);
+      }
+
+      let selectorPT2_Q01 = document.querySelector('h1');
+      
+      selectorPT2_Q01.className = 'title';
+
+      let selectorPT2_Q02 = document.querySelectorAll('h3');
+
+      for (let index in selectorPT2_Q02) {
+        selectorPT2_Q02[index].className = 'description';
+      }
+
+      let selectorPT2_Q03 = document.querySelector('.main-content');
+      let selectorPT2_Q03_interno = document.querySelector('.left-content');
+
+      selectorPT2_Q03.removeChild(selectorPT2_Q03_interno);
+
+      let selectorPT2_Q04 = document.querySelector('.right-content');
+
+      selectorPT2_Q04.style.marginRight = 'auto';
+
+      let selectorPT2_Q05 = document.querySelector('.center-content').parentElement;
+
+      selectorPT2_Q05.style.backgroundColor = '#226B53';
+      
+    </script>
+  </body>
+</html>
