@@ -19,23 +19,23 @@ body {
   align-items: center;
 }
 
-#info_pessoais {
+#info_pessoais, #ultimo_emprego {
   width: 95%;
   height: auto;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
-#table_form {
+.table_form {
   width: 95%;
   margin: 10px auto;
   border: 1px solid rgb(109, 109, 109);
 }
 
-#table_form tr td {
+.table_form tr td {
   padding: 15px;
   text-align: right;
 }
 
-#info_pessoais input {
+#info_pessoais input, #ultimo_emprego input, textarea {
   width: 100%;
 }
