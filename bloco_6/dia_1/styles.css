@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+#content {
+  max-width: 1280px;
+  height: auto;
+  margin: 20px auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#info_pessoais {
+  width: 95%;
+  height: auto;
+  margin: 10px auto;
+}
+
+#table_form {
+  width: 95%;
+  margin: 10px auto;
+  border: 1px solid rgb(109, 109, 109);
+}
+
+#table_form tr td {
+  padding: 15px;
+  text-align: right;
+}
+
+#info_pessoais input {
+  width: 100%;
+}
