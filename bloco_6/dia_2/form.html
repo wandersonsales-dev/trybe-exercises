@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="stylesheet" href="styles.css">
   <title>Forms</title>
 </head>
@@ -12,68 +13,88 @@
 <body>
   <div id="content">
     <form action="">
-      <fieldset id="info_pessoais">
-        <legend>Teste</legend>
+      <div class="field">
+        <div class="control">
+          <label class="label" for="nome">Nome: </label>
+          <input class="input" type="text" name="nome" maxlength="40" required autofocus id="nome">
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control is-expanded">
+          <label class="label" for="email">Email: </label>
+          <input class="input" type="email" name="email" id="email" maxlength="50" required>
+        </div>
+        <div class="control is-expanded">
+          <label class="label" for="cpf">CPF: </label>
+          <input class="input" type="text" name="cpf" id="cpf" maxlength="11" required>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="label" for="endereco">Endereço: </label>
+          <input class="input" type="text" name="endereco" id="endereco" maxlength="200" required>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <p class="control is-expanded">
+          <label class="label" for="cidade">Cidade: </label>
+          <input class="input" type="text" name="cidade" id="cidade" maxlength="28" required></td>
+        </p>
+        <p class="control is-expanded">
+          <span class="label">Estado: </span>
+          <span class="select">
+            <select name="estado" id="estado"></select>
+          </span>
+        </p>
+      </div>
 
-        <table class="table_form">
-          <tr>
-            <td><label for="nome">Nome: </label></td>
-            <td colspan="5"><input type="text" name="nome" maxlength="40" required autofocus id="nome"></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email: </label></td>
-            <td colspan="3"><input type="email" name="email" id="email" maxlength="50" required></td>
-            <td><label for="cpf">CPF: </label></td>
-            <td><input type="text" name="cpf" id="cpf" maxlength="11" required></td>
-          </tr>
-          <tr>
-            <td><label for="endereco">Endereço: </label></td>
-            <td colspan="5"><input type="text" name="endereco" id="endereco" maxlength="200" required></td>
-          </tr>
-          <tr>
-            <td><label for="cidade">Cidade: </label></td>
-            <td><input type="text" name="cidade" id="cidade" maxlength="28" required></td>
-            <td><label for="estado">Estado: </label></td>
-            <td><select name="estado" id="estado"></select></td>
-          </tr>
-          <tr>
-            <td>
-              <label for="casa">casa: </label>
-            </td>
-            <td><input type="radio" name="moradia" value="casa" id="casa"></td>
-            <td>
-              <label for="apartamento">Apartamento: </label>
-            </td>
-            <td><input type="radio" name="moradia" value="apartamento" id="apartamento"></td>
-          </tr>
-        </table>
-      </fieldset>
+      <div class="field">
+        <div class="control">
+          <label class="label">Você mora em: </label>
+          <label class="radio">
+            <input type="radio" name="moradia" value="casa" id="casa">
+            Casa
+          </label>
+          <label class="radio">
+            <input type="radio" name="moradia" value="apartamento" id="apartamento">
+            Apartamento
+          </label>
+        </div>
+      </div>
 
-      <fieldset id="ultimo_emprego">
-        <legend>Último emprego</legend>
+      <div class="field">
+        <div class="control">
+          <label class="label" for="resumo">Resumo: </label>
+          <textarea class="textarea" name="resumo" id="resumo" maxlength="1000" required></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="label" for="cargo">Cargo: </label>
+          <input class="input" type="text" id="cargo" maxlength="40" required>
+        </div>
+      </div>
 
-        <table class="table_form">
-          <tr>
-            <td><label for="resumo">Resumo: </label></td>
-            <td><textarea name="resumo" id="resumo" maxlength="1000" required></textarea></td>
-          </tr>
-          <tr>
-            <td><label for="cargo">Cargo: </label></td>
-            <td><input type="text" id="cargo" maxlength="40" required></td>
-          </tr>
-          <tr>
-            <td><label for="desc_cargo">Descrição do cargo: </label></td>
-            <td><input type="text" id="desc_cargo" maxlength="500" required></td>
-          </tr>
-          <tr>
-            <td><label for="data_inicio">Data de início: </label></td>
-            <td><input type="date" id="data_inicio" required></td>
-          </tr>
-        </table>
-      </fieldset>
+      <div class="field">
+        <div class="control">
+          <label class="label" for="desc_cargo">Descrição do cargo: </label>
+          <input class="input" type="text" id="desc_cargo" maxlength="500" required>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="label" for="data_inicio">Data de início: </label>
+          <input class="input" type="date" id="data_inicio" required>
+        </div>
+      </div>
       <div id="control">
-        <button type="button" id="button-send">Enviar</button>
-        <button type="reset" >redefinir</button>
+        <button class="button is-success" type="button" id="button-send">Enviar</button>
+        <button class="button is-danger" type="reset" >redefinir</button>
       </div>
     </form>
     <div id="dataForm"></div>

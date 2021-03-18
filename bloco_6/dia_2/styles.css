@@ -6,6 +6,7 @@
 
 body {
   background-color: gainsboro;
+  padding: 10px;
 }
 
 #content {
@@ -17,6 +18,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px;
+  border-radius: 8px;
 }
 
 #info_pessoais, #ultimo_emprego {
