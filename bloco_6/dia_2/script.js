@@ -2,6 +2,14 @@ const selectEl = document.querySelector('#estado');
 const buttonSend = document.querySelector('#button-send');
 const inputs = document.querySelectorAll('input, select, textarea');
 const dataForm = document.querySelector('#dataForm');
+const dataInicio = document.getElementById('data_inicio');
+
+const setDataPicker = () => {
+  dataInicio.DatePickerX.init({
+    format: 'dd/mm/yyyy',
+    maxDate: Date.now(),
+  });
+};
 
 const estados = {
   FR: 'Selecione um estado',
@@ -73,16 +81,6 @@ const checkFieldTextarea = (field) => {
   return false;
 };
 
-const checkFieldData = (field) => {
-  const day = parseInt(field.value.substring(8), 10);
-  const month = parseInt(field.value.substring(5, 7), 10);
-  const year = parseInt(field.value.substring(0, 4), 10);
-  if ((day > 0 && day <= 31) && (month > 0 && month <= 12) && (year > 0)) {
-    return true;
-  }
-  return false;
-};
-
 const checkData = (e) => {
   dataForm.innerHTML = '';
   const completeDiv = document.createElement('div');
@@ -134,13 +132,6 @@ const checkData = (e) => {
       }
     }
 
-    if (el.type === 'date') {
-      if (!checkFieldData(el)) {
-        err = true;
-        alert(`O elemento ${el.id} está vazio ou errado!`);
-      }
-    }
-
     if (err !== true) {
       const newDiv = document.createElement('div');
       newDiv.innerHTML += el.value;
@@ -160,6 +151,7 @@ const activeButtonSend = () => {
 };
 
 window.onload = () => {
+  setDataPicker();
   createOptions();
   activeButtonSend();
 };
