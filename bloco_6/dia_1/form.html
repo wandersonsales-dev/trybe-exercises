@@ -40,11 +40,11 @@
             <td>
               <label for="casa">casa: </label>
             </td>
-            <td><input type="radio" name="casa" id="casa"></td>
+            <td><input type="radio" name="moradia" value="casa" id="casa"></td>
             <td>
               <label for="apartamento">Apartamento: </label>
             </td>
-            <td><input type="radio" name="apartamento" id="apartamento"></td>
+            <td><input type="radio" name="moradia" value="apartamento" id="apartamento"></td>
           </tr>
         </table>
       </fieldset>
@@ -71,10 +71,13 @@
           </tr>
         </table>
       </fieldset>
-      <button type="submit" id="button-send">Enviar</button>
+      <div id="control">
+        <button type="button" id="button-send">Enviar</button>
+        <button type="reset" >redefinir</button>
+      </div>
     </form>
+    <div id="dataForm"></div>
   </div>
-  <div id="dataForm"></div>
   <script src="script.js"></script>
 </body>
 
