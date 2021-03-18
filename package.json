@@ -1,0 +1,33 @@
+{
+  "name": "trybe-exercises",
+  "version": "1.0.0",
+  "description": "<h1>   <img src=\"https://ik.imagekit.io/ykxazfauisd/Capa_Trybe_01_XoIjcbXqZ.png\" /> </h1>",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.3.1",
+    "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandersonsales-dev/trybe-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wandersonsales-dev/trybe-exercises/issues"
+  },
+  "homepage": "https://github.com/wandersonsales-dev/trybe-exercises#readme"
+}
