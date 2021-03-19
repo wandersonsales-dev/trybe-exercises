@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <script src="dist/js/DatePickerX.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Forms</title>
+</head>
+
+<body>
+  <div id="content">
+    <form action="" class="js-form">
+      <div class="field">
+        <div class="control">
+          <label class="label" for="nome">Nome: </label>
+          <input class="input form__input" data-validate-field="name" type="text" name="nome" maxlength="40" required autofocus id="nome">
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control is-expanded">
+          <label class="label" for="email">Email: </label>
+          <input class="input" data-validate-field="email" type="email" name="email" id="email" maxlength="50" required>
+        </div>
+        <div class="control is-expanded">
+          <label class="label" for="cpf">CPF: </label>
+          <input class="input" data-validate-field="cpf" type="text" name="cpf" id="cpf" maxlength="11" required>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="label" for="endereco">Endereço: </label>
+          <input class="input" data-validate-field="endereco" type="text" name="endereco" id="endereco" maxlength="200" required>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <p class="control is-expanded">
+          <label class="label" for="cidade">Cidade: </label>
+          <input class="input" data-validate-field="text" type="text" name="cidade" id="cidade" maxlength="28" required></td>
+        </p>
+        <p class="control is-expanded">
+          <span class="label">Estado: </span>
+          <span class="select">
+            <select name="estado" data-validate-field="state" id="estado"></select>
+          </span>
+        </p>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="label">Você mora em: </label>
+          <label class="radio">
+            <input type="radio" data-validate-field="radio" name="moradia" value="casa" id="casa">
+            Casa
+          </label>
+          <label class="radio">
+            <input type="radio" data-validate-field="radio" name="moradia" value="apartamento" id="apartamento">
+            Apartamento
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="label" for="resumo">Resumo: </label>
+          <textarea class="textarea" data-validate-field="resumo" name="resumo" id="resumo" maxlength="1000" required></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="label" for="cargo">Cargo: </label>
+          <input class="input" data-validate-field="cargo" type="text" id="cargo" maxlength="40" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="label" for="desc_cargo">Descrição do cargo: </label>
+          <input class="input" data-validate-field="desc_cargo" type="text" id="desc_cargo" maxlength="500" required>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="label" for="data_inicio">Data de início: </label>
+          <input class="input" data-validate-field="data" id="data_inicio" required>
+        </div>
+      </div>
+      <div id="control">
+        <button class="button is-success" id="button-send">Enviar</button>
+        <button class="button is-danger" type="reset" >redefinir</button>
+      </div>
+    </form>
+    <div id="dataForm"></div>
+  </div>
+  <script src="script.js"></script>
+  <script src="./dist/js/just-validate.min.js"></script>
+
+  <script>
+    new window.JustValidate('.js-form', {
+      rules: {
+        email: {
+          required: true,
+          email: true,
+        },
+        cpf: {
+          required:true,
+        },
+        endereco: {
+          required: true,
+        },
+        state: {
+          'function': (a, v) => {
+            return (v !== 'Selecione um estado');
+          }
+        },
+        radio: {
+          required: true,
+        },
+        resumo: {
+          required: true,
+        },
+        cargo: {
+          required: true,
+        },
+        desc_cargo: {
+          required: true,
+        },
+        data: {
+          required: true,
+        },
+        anotherField: { required: true},
+      },
+      messages: {
+        state: 'You must choose an state',
+      },
+      focusWrongField: true,
+    });
+  </script>
+</body>
+
+</html>
