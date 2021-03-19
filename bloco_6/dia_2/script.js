@@ -51,107 +51,22 @@ const createOptions = () => {
   });
 };
 
-const checkFieldText = (field) => {
-  if (field.value.length) {
-    return true;
-  }
-  return false;
-};
-
-const checkFieldEmail = (field) => {
-  if (field.value.length) {
-    if (/^[a-z0-9.]+@[a-z0-9]+\.[a-z]+$/.test(field.value)) {
-      return true;
-    }
-  }
-  return false;
-};
-
-const checkFieldSelect = (field) => {
-  if (field.value !== 'Selecione um estado') {
-    return true;
-  }
-  return false;
-};
-
-const checkFieldTextarea = (field) => {
-  if (field.value.length) {
-    return true;
-  }
-  return false;
-};
-
-const checkData = (e) => {
+const checkData = () => {
   dataForm.innerHTML = '';
   const completeDiv = document.createElement('div');
   completeDiv.className = 'newData';
-  let err = false;
-  let contador = 0;
-  let countRadio = 0;
 
   inputs.forEach((el) => {
-    if (el.type === 'text') {
-      if (!checkFieldText(el)) {
-        err = true;
-        alert(`O elemento ${el.id} é obrigatório!`);
-      }
-    }
-
-    if (el.type === 'email') {
-      if (!checkFieldEmail(el)) {
-        err = true;
-        alert(`O elemento ${el.id} está vazio ou errado!`);
-      }
-    }
-
-    if (el.type === 'select-one') {
-      if (!checkFieldSelect(el)) {
-        err = true;
-        alert(`O elemento ${el.id} é obrigatório!`);
-      }
-    }
-
-    if (el.type === 'radio') {
-      contador += 1;
-      if (el.checked) {
-        countRadio += 1;
-      }
-    }
-
-    if (contador === 2 && countRadio === 0) {
-      err = true;
-      alert(`O elemento ${el.type} é obrigatório!`);
-      countRadio = 0;
-      contador = 0;
-    }
-
-    if (el.type === 'textarea') {
-      if (!checkFieldTextarea(el)) {
-        err = true;
-        alert(`O elemento ${el.id} é obrigatório!`);
-      }
-    }
-
-    if (err !== true) {
-      const newDiv = document.createElement('div');
-      newDiv.innerHTML += el.value;
-      completeDiv.appendChild(newDiv);
-    }
+    const newDiv = document.createElement('div');
+    newDiv.innerHTML += el.value;
+    completeDiv.appendChild(newDiv);
   });
 
-  if (err === true) {
-    e.preventDefault();
-  } else {
-    dataForm.appendChild(completeDiv);
-  }
-};
-
-const activeButtonSend = () => {
-  buttonSend.addEventListener('click', checkData);
+  dataForm.appendChild(completeDiv);
 };
 
 window.onload = () => {
   setDataPicker();
   createOptions();
-  activeButtonSend();
+  buttonSend.addEventListener('click', checkData);
 };
