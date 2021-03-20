@@ -58,3 +58,15 @@ figure {
     flex-basis: 300px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: rgb(187, 187, 187);
+    font-size: 1.4rem;
+    margin: 70px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
