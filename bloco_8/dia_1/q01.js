@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable max-len */
 // Q01. Crie uma função de primeira classe que retorna um objeto { nomeCompleto, email }
 //      de uma nova pessoa contratada. Passe sua função como parâmetro da HOF
