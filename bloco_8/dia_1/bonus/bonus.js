@@ -68,7 +68,12 @@ const gameActions = {
   mageShift: (action) => {
     battleMembers.dragon.healthPoints -= action();
   },
+  dragonShift: (action) => {
+    battleMembers.mage.healthPoints -= action();
+    battleMembers.warrior.healthPoints -= action();
+  },
 };
 
 gameActions.knightShift(battleMembers.warrior.damage);
 gameActions.mageShift(battleMembers.mage.damage);
+gameActions.dragonShift(battleMembers.dragon.damage);
