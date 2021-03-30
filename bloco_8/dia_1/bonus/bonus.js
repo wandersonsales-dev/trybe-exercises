@@ -30,16 +30,12 @@ const battleMembers = { mage, warrior, dragon };
 const getDamageDragon = () => (Math.random() * (dragon.strength - 15) + 15).toFixed(2);
 dragon.damage = getDamageDragon;
 
-console.log(`Dano do Dragão: ${battleMembers.dragon.damage()}`);
-
 // Q02. Crie uma função que reotorna o dano causado pelo warrior .
 //      O dano será um número aleatório entre o valor do atributo
 //      strength (dano mínimo) e o valor de strength * weaponDmg (dano máximo).
 
 const getDamageWarrior = () => (Math.random() * ((warrior.strength * warrior.weaponDmg) - warrior.strength) + warrior.strength).toFixed(2);
 warrior.damage = getDamageWarrior;
-
-console.log(`Dano do Cavaleiro: ${battleMembers.warrior.damage()}`);
 
 // Q03. Crie uma função que retorna um objeto com duas chaves e dois valores
 //      contendo o dano e a mana gasta pelo mago em um turno.
@@ -63,5 +59,8 @@ const manaMage = () => {
 };
 mage.mana = manaMage;
 
-console.log(`Maná do Mago: ${battleMembers.mage.mana()}`);
-console.log(`Dano do Mago: ${battleMembers.mage.damage()}`);
+// PARTE 02
+
+const gameActions = {
+  // Crie as HOFs neste objeto.
+};
