@@ -65,11 +65,10 @@ const gameActions = {
     battleMembers.dragon.healthPoints -= action();
     return battleMembers.dragon.healthPoints;
   },
+  mageShift: (action) => {
+    battleMembers.dragon.healthPoints -= action();
+  },
 };
 
-console.log(`Pontos de vida do Dragão: ${battleMembers.dragon.healthPoints}`);
-console.log(`Dano do Warrior: ${battleMembers.warrior.damage()}`);
-
 gameActions.knightShift(battleMembers.warrior.damage);
-
-console.log(`Pontos de vida do Dragão: ${battleMembers.dragon.healthPoints}`);
+gameActions.mageShift(battleMembers.mage.damage);
