@@ -27,15 +27,14 @@ const battleMembers = { mage, warrior, dragon };
 //      e o valor do atributo strength (dano máximo).
 
 // Math.random() * (max - min) + min;
-const getDamageDragon = () => (Math.random() * (dragon.strength - 15) + 15).toFixed(2);
-dragon.damage = getDamageDragon;
+const damageDragon = () => (Math.random() * (dragon.strength - 15) + 15).toFixed(2);
 
 // Q02. Crie uma função que reotorna o dano causado pelo warrior .
 //      O dano será um número aleatório entre o valor do atributo
 //      strength (dano mínimo) e o valor de strength * weaponDmg (dano máximo).
 
-const getDamageWarrior = () => (Math.random() * ((warrior.strength * warrior.weaponDmg) - warrior.strength) + warrior.strength).toFixed(2);
-warrior.damage = getDamageWarrior;
+const damageWarrior = () => (Math.random() * ((warrior.strength * warrior.weaponDmg) - warrior.strength) + warrior.strength).toFixed(2);
+battleMembers.warrior.damage = damageDragon;
 
 // Q03. Crie uma função que retorna um objeto com duas chaves e dois valores
 //      contendo o dano e a mana gasta pelo mago em um turno.
@@ -48,7 +47,7 @@ warrior.damage = getDamageWarrior;
 //      (Ex: "Não possui mana suficiente") e a mana gasta é 0.
 
 const attackMageCost = () => (Math.random() * ((mage.intelligence * 2) - mage.intelligence) + mage.intelligence).toFixed(2);
-mage.damage = attackMageCost;
+battleMembers.mage.damage = attackMageCost;
 
 const manaMage = () => {
   if (mage.mana > 15) {
@@ -57,10 +56,20 @@ const manaMage = () => {
   }
   return 'Não possui maná suficiente';
 };
-mage.mana = manaMage;
+battleMembers.mage.mana = manaMage;
 
 // PARTE 02
 
 const gameActions = {
-  // Crie as HOFs neste objeto.
+  knightShift: (action) => {
+    battleMembers.dragon.healthPoints -= action();
+    return battleMembers.dragon.healthPoints;
+  },
 };
+
+console.log(`Pontos de vida do Dragão: ${battleMembers.dragon.healthPoints}`);
+console.log(`Dano do Warrior: ${battleMembers.warrior.damage()}`);
+
+gameActions.knightShift(battleMembers.warrior.damage);
+
+console.log(`Pontos de vida do Dragão: ${battleMembers.dragon.healthPoints}`);
