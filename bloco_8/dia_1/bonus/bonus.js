@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const mage = {
   healthPoints: 130,
   intelligence: 45,
@@ -19,3 +20,12 @@ const dragon = {
 };
 
 const battleMembers = { mage, warrior, dragon };
+
+// Q01. Crie uma função que retorna o dano do dragão.
+//      O dano será um número aleatório entre 15 (dano mínimo)
+//      e o valor do atributo strength (dano máximo).
+
+const getDamegeDragon = () => (Math.random() * (dragon.strength - 15) + 15).toFixed(2);
+dragon.damage = getDamegeDragon();
+
+console.log(`Dano do Dragão: ${battleMembers.dragon.damage}`);
