@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
 // Q07. Faça uma função que retorne true , caso nenhum author
 // tenha nascido no mesmo ano, e false , caso contrário.
 
 const assert = require('assert');
+const { RuleTester } = require('eslint');
 
 const books = [
   {
@@ -68,17 +70,21 @@ const books = [
 
 const expectedResult = false;
 
+// function authorUnique() {
+//   let notRepeated = true;
+//   books.forEach((book) => {
+//     const year = book.author.birthYear;
+//     books.forEach((bookCompare) => {
+//       if (year === bookCompare.author.birthYear && bookCompare !== book) {
+//         notRepeated = false;
+//       }
+//     });
+//   });
+//   return notRepeated;
+// }
+
 function authorUnique() {
-  let notRepeated = true;
-  books.forEach((book) => {
-    const year = book.author.birthYear;
-    books.forEach((bookCompare) => {
-      if (year === bookCompare.author.birthYear && bookCompare !== book) {
-        notRepeated = false;
-      }
-    });
-  });
-  return notRepeated;
+  return books.every((book) => books.some((bookSome) => (bookSome.author.birthYear === book.author.birthYear) && (bookSome !== book)));
 }
 
 assert.strictEqual(authorUnique(), expectedResult);
