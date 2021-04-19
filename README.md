@@ -39,48 +39,48 @@ O currículo da Trybe foi desenhado em parceria com as maiores empresas de tecno
   - [x] [Exercícios Resolvidos](https://github.com/wandersonsales-dev/trybe-exercises/tree/master/bloco_3)
   - [x] [Projetos](https://github.com/wandersonsales-dev/wandersonsales-dev.github.io/tree/master/projects)
     - [x] [Lessons Learned](https://github.com/wandersonsales-dev/wandersonsales-dev.github.io/tree/master/projects/lessons-learned)
-- [ ] [BLOCO 04] Introdução à JavaScript e Lógica de Programação
+- [x] [BLOCO 04] Introdução à JavaScript e Lógica de Programação
   - [x] Introdução - JavaScript
   - [x] JavaScript - Primeiros passos
   - [x] JavaScript - Array e loop For
-  - [ ] JavaScript - Lógica de Programação e Algoritmos
-  - [ ] JavaScript - Objetos e Funções
-  - [ ] [Exercícios Resolvidos](https://github.com/wandersonsales-dev/trybe-exercises/tree/master/bloco_4)
-  - [ ] Projetos
-    - [ ] Playground Functions
-- [ ] [BLOCO 05] JavaScript: DOM, Eventos e Web Storage
-  - [ ] JavaScript - DOM e Seletores
-  - [ ] JavaScript - Trabalhando com elementos
-  - [ ] JavaScript - Eventos
-  - [ ] JavaScript - Web Storage
-  - [ ] Fundamentos - JavaScript - Projetos
-    - [ ] Projetos
-      - [ ] Arte com Pixels
-      - [ ] Lista de Tarefas
-      - [ ] [BÔNUS] - Meme Generator
-      - [ ] [BÔNUS] - Adivinhe a cor
-      - [ ] [BÔNUS] - Carta misteriosa
-- [ ] [BLOCO 06] HTML e CSS: Forms, Flexbox e Responsivo
-  - [ ] HTML e CSS - Forms
-  - [ ] Bibliotecas JavaScript e Frameworks CSS
-  - [ ] Introdução - CSS Flexbox
-  - [ ] CSS - Flex Box (PARTE 01)
-  - [ ] CSS - Flex Box (PARTE 02)
-  - [ ] CSS Responsivo - Mobile First
-  - [ ] Projetos
-    - [ ] Página inicial do Facebook
-- [ ] [BLOCO 07] Introdução à JavaScript ES6 e Testes Unitários
-  - [ ] JavaScript ES6 - let, const, arrow functions e template literals
-  - [ ] JavaScript ES6 - Objects
-  - [ ] Testes unitários em JavaScript
-  - [ ] Projetos
-    - [ ] JavaScript Testes Unitários
+  - [x] JavaScript - Lógica de Programação e Algoritmos
+  - [x] JavaScript - Objetos e Funções
+  - [x] [Exercícios Resolvidos](https://github.com/wandersonsales-dev/trybe-exercises/tree/master/bloco_4)
+  - [x] Projetos
+    - [x] Playground Functions
+- [x] [BLOCO 05] JavaScript: DOM, Eventos e Web Storage
+  - [x] JavaScript - DOM e Seletores
+  - [x] JavaScript - Trabalhando com elementos
+  - [x] JavaScript - Eventos
+  - [x] JavaScript - Web Storage
+  - [x] Fundamentos - JavaScript - Projetos
+    - [x] Projetos
+      - [x] Arte com Pixels
+      - [x] Lista de Tarefas
+      - [x] [BÔNUS] - Meme Generator
+      - [x] [BÔNUS] - Adivinhe a cor
+      - [x] [BÔNUS] - Carta misteriosa
+- [x] [BLOCO 06] HTML e CSS: Forms, Flexbox e Responsivo
+  - [x] HTML e CSS - Forms
+  - [x] Bibliotecas JavaScript e Frameworks CSS
+  - [x] Introdução - CSS Flexbox
+  - [x] CSS - Flex Box (PARTE 01)
+  - [x] CSS - Flex Box (PARTE 02)
+  - [x] CSS Responsivo - Mobile First
+  - [x] Projetos
+    - [x] Página inicial do Facebook
+- [x] [BLOCO 07] Introdução à JavaScript ES6 e Testes Unitários
+  - [x] JavaScript ES6 - let, const, arrow functions e template literals
+  - [x] JavaScript ES6 - Objects
+  - [x] Testes unitários em JavaScript
+  - [x] Projetos
+    - [x] JavaScript Testes Unitários
 - [ ] [BLOCO 08] Higher Order Functions do JavaScript ES6
-  - [ ] JavaScript ES6 - Introdução à Higher Order Functions
-  - [ ] JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
-  - [ ] JavaScript ES6 - Higher Order Functions - map e filter
-  - [ ] JavaScript ES6 - Higher Order Functions - reduce
-  - [ ] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
+  - [x] JavaScript ES6 - Introdução à Higher Order Functions
+  - [x] JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+  - [x] JavaScript ES6 - Higher Order Functions - map e filter
+  - [x] JavaScript ES6 - Higher Order Functions - reduce
+  - [x] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
   - [ ] Projetos
     - [ ] Zoo Functions
 - [ ] [BLOCO 09] JavaScript Assíncrono e Promisses
