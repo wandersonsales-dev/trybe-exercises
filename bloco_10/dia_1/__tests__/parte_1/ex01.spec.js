@@ -12,4 +12,8 @@ describe('Questão 01', () => {
   test('A soma de 4 e \'5\' deve lançar um erro', () => {
     expect(() => sum(4, '5')).toThrow();
   });
+
+  test('A soma de 4 e \'5\' deve lançar um erro', () => {
+    expect(() => sum(4, '5')).toThrowError(new Error('parameters must be numbers'));
+  });
 });
