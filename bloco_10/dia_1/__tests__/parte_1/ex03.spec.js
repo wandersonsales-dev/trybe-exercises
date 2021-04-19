@@ -1,7 +1,7 @@
 const myRemoveWithoutCopy = require('../../parte_1/ex03');
 
 describe('Questão 3', () => {
-  test('myRemoveWithoutCopy([1, 2, 3, 4], 3) deve retornar [3]', () => {
+  test('myRemoveWithoutCopy([1, 2, 3, 4], 3) deve retornar [1, 2, 4]', () => {
     const arr = [1, 2, 3, 4];
     expect(myRemoveWithoutCopy(arr, 3)).toEqual([1, 2, 4]);
   });
@@ -11,7 +11,11 @@ describe('Questão 3', () => {
     expect(myRemoveWithoutCopy(arr, 3)).not.toEqual([1, 2, 3, 4]);
   });
 
-  test('myRemoveWithoutCopy([1, 2, 3, 4], 3) NÃO deve retornar [1, 2, 3, 4]', () => {
+  test('myRemoveWithoutCopy([1, 2, 3, 4], 3) deve retornar [1, 2, 3, 4]', () => {
     expect(myRemoveWithoutCopy([1, 2, 3, 4])).toEqual([1, 2, 3, 4]);
+  });
+
+  test('myRemoveWithoutCopy([1, 2, 3, 4], 5) deve retornar [1, 2, 3, 4]', () => {
+    expect(myRemoveWithoutCopy([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
   });
 });
