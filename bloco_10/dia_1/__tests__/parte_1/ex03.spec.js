@@ -10,4 +10,8 @@ describe('Questão 3', () => {
     const arr = [1, 2, 3, 4];
     expect(myRemoveWithoutCopy(arr, 3)).not.toEqual([1, 2, 3, 4]);
   });
+
+  test('myRemoveWithoutCopy([1, 2, 3, 4], 3) NÃO deve retornar [1, 2, 3, 4]', () => {
+    expect(myRemoveWithoutCopy([1, 2, 3, 4])).toEqual([1, 2, 3, 4]);
+  });
 });
