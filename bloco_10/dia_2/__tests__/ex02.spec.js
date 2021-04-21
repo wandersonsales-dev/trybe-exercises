@@ -1,7 +1,12 @@
 const getUserName = require('../ex02');
 
-it('should return the users information', async () => {
+it('should return the users information', () => {
   expect.assertions(1);
-  const response = await getUserName(4);
-  expect(response).toEqual('Mark');
+  return expect(getUserName(4)).resolves.toBe('Mark');
+});
+
+it('should return a object contains a message error', () => {
+  const id = 8;
+  expect.assertions(1);
+  return expect(getUserName(id)).rejects.toEqual({ error: `User with ${id} not found.` });
 });
