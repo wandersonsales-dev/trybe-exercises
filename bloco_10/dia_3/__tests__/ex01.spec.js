@@ -1,4 +1,4 @@
-let generateRandomNumber = require('../ex01');
+let { generateRandomNumber } = require('../ex01');
 
 describe('Questão 01', () => {
   it('Testa se função retorna um valor 10.', () => {

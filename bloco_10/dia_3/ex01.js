@@ -5,4 +5,4 @@
 
 const generateRandomNumber = () => Math.round(Math.random() * 100);
 
-module.exports = generateRandomNumber;
+module.exports = { generateRandomNumber };
