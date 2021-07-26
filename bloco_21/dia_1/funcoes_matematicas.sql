@@ -8,3 +8,7 @@ SELECT
 -- 3 - Utilizando o resultado anterior, responda à seguinte pergunta: temos lugares sobrando? Se sim, quantos?
 SELECT
   220 MOD 12;
+-- EXERCÍCIOS
+  -- 1 - Monte uma query que gere um valor entre 15 e 20.
+SELECT
+  ROUND(15 + (RAND() * 5));
