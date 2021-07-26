@@ -11,3 +11,10 @@ SELECT
 -- 3 - Utilizando uma query , encontre quantos caracteres temos em 'Uma frase qualquer'.
 SELECT
   LENGTH('Uma frase qualquer');
+-- 4 - Extraia e retorne a palavra "JavaScript" da frase 'A linguagem JavaScript está entre as mais usadas'.
+SELECT
+  SUBSTRING(
+    'A linguagem JavaScript está entre as mais usadas',
+    12,
+    11
+  );
