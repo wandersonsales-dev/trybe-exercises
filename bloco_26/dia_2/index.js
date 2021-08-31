@@ -17,6 +17,13 @@ const retornaPromise = (num1, num2, num3) => {
 
 const geraNumero = () => Math.floor(Math.random() * 100 + 1);
 
-retornaPromise(geraNumero(), geraNumero(), geraNumero())
-  .then((result) => console.log(result))
-  .catch((err) => console.log(err.message));
+// retornaPromise(geraNumero(), geraNumero(), geraNumero())
+//   .then((result) => console.log(result))
+//   .catch((err) => console.log(err.message));
+
+const main = async () => {
+  const result = await retornaPromise(geraNumero(), geraNumero(), geraNumero());
+  console.log(result);
+}
+
+main();
