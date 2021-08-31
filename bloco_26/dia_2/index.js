@@ -13,3 +13,10 @@ const retornaPromise = (num1, num2, num3) => {
     resolve(value);
   });
 }
+
+
+const geraNumero = () => Math.floor(Math.random() * 100 + 1);
+
+retornaPromise(geraNumero(), geraNumero(), geraNumero())
+  .then((result) => console.log(result))
+  .catch((err) => console.log(err.message));
