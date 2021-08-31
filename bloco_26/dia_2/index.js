@@ -1,4 +1,5 @@
 const fs = require('fs');
+const fsp = require('fs').promises;
 
 const retornaPromise = (num1, num2, num3) => {
   return new Promise((resolve, reject) => {
@@ -108,3 +109,22 @@ const changeNelsonToMaggie = () => {
 }
 
 // changeNelsonToMaggie();
+
+const strings = ['Finalmente', 'estou', 'usando', 'Promise.all', '!!!'];
+
+strings.map((str, i) => {
+  fsp.writeFile(`file${i + 1}.txt`, str);
+});
+
+Promise.all([
+  fsp.readFile('file1.txt'),
+  fsp.readFile('file2.txt'),
+  fsp.readFile('file3.txt'),
+  fsp.readFile('file4.txt'),
+  fsp.readFile('file5.txt'),
+])
+  .then(([file1, file2, file3, file4, file5]) => {
+    const frase = `${file1} ${file2} ${file3} ${file4} ${file5}`;
+    fs.writeFileSync('fileAll.txt', frase);
+  })
+  .catch((err) => console.log(err));
